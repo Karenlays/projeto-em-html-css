@@ -2,7 +2,7 @@
 
 Website para restaurante de comida Japonesa.
 
-_manipulação de template pronto!_
+_OBS: manipulação de template pronto_
 
 ![Captura de tela 2024-07-03 104858](https://github.com/Karenlays/projeto-em-html-css/assets/125169100/432d928a-e1d0-4ff7-8ce6-2e9e11fc55f6)
 
