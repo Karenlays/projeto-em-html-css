@@ -8,7 +8,7 @@ Projeto de interface web desenvolvido como avaliação acadêmica para a gradua�
 
 ## 🔗 Demonstração
 Acesse a versão ativa do projeto via GitHub Pages:  
-👉 **[Visualizar Website]([https://karenlays.github.io/projeto-em-html-css](https://karenlays.github.io/Landing_Page_Gastronomica-Restaurante_Orient/))**
+👉 **[Visualizar Website](https://karenlays.github.io/projeto-em-html-css](https://karenlays.github.io/Landing_Page_Gastronomica-Restaurante_Orient/)**
 
 ---
 
