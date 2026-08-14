@@ -47,7 +47,7 @@ Acesse a versão ativa do projeto via GitHub Pages:
 
 ---
 ## ✍️ Autora
-* **Refatoração, Estilização e Manutenção:**Karen Laís**  
+* **Refatoração, Estilização e Manutenção: **Karen Laís**  
 - 🎓 Graduada em ADS | Cursando Engenharia de Software  
 - 💻 [Meu Perfil no GitHub](https://github.com/Karenlays)
 
