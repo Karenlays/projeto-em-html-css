@@ -8,7 +8,7 @@ Projeto de interface web desenvolvido como avaliação acadêmica para a gradua�
 
 ## 🔗 Demonstração
 Acesse a versão ativa do projeto via GitHub Pages:  
-👉 **[Visualizar Website](https://karenlays.github.io/projeto-em-html-css](https://karenlays.github.io/Landing_Page_Gastronomica-Restaurante_Orient/)**
+👉 **[Visualizar Website](https://karenlays.github.io/Landing_Page_Gastronomica-Restaurante_Orient/)**
 
 ---
 
@@ -27,7 +27,7 @@ Acesse a versão ativa do projeto via GitHub Pages:
 - Projeto prático de consolidação de conceitos de desenvolvimento web.
 
 ---
-## 🖼️ Imagens  
+## 🖼️ Imagens do Projeto
 
 ![Captura de tela 2024-07-03 104858](https://github.com/Karenlays/projeto-em-html-css/assets/125169100/432d928a-e1d0-4ff7-8ce6-2e9e11fc55f6)
 
@@ -43,11 +43,12 @@ Acesse a versão ativa do projeto via GitHub Pages:
 
 ---
 ## 📄 Créditos
-* **Template Base Original:** BootstrapMade.com / Template utilizado para avaliação acadêmica de 2022
+* **Template Base Original:** BootstrapMade.com (Template utilizado para avaliacao academica)
+* * **Estilizacao e Manutencao:** Karen Lais
 
 ---
 ## ✍️ Autora
-* **Refatoração, Estilização e Manutenção: **Karen Laís**  
+Desenvolvido por **Karen Lais**
 - 🎓 Graduada em ADS | Cursando Engenharia de Software  
 - 💻 [Meu Perfil no GitHub](https://github.com/Karenlays)
 
