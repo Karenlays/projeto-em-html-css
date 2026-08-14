@@ -1,8 +1,33 @@
 # Itadakimasu Restaurant
 
-Website para restaurante de comida Japonesa.
+# 🍣 Landing Page — Restaurante de Gastronomia Japonesa
 
-_OBS: manipulação de template pronto_
+Projeto de interface web desenvolvido como avaliação acadêmica para o curso superior de Análise e Desenvolvimento de Sistemas (ADS). O objetivo do projeto foi a criação de uma landing page para um restaurante temático, utilizando uma estrutura base estilizada e customizada para o segmento.
+
+---
+
+## 🔗 Demonstração
+Acesse a versão ativa do projeto via GitHub Pages:  
+👉 **[Visualizar Website](https://karenlays.github.io/projeto-em-html-css)**
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **HTML5:** Estruturação das seções e conteúdos da página.
+* **CSS3:** Estilização visual, cores e layout.
+* **Git & GitHub Pages:** Versionamento e publicação do projeto online.
+
+---
+
+## 📌 Destaques do Projeto
+
+- Layout focado em apresentação de cardápio e identidade visual temática.
+- Seções informativas sobre o restaurante, pratos e localização.
+- Projeto prático de consolidação de conceitos de desenvolvimento web.
+
+---
+## 🖼️ Imagens  
 
 ![Captura de tela 2024-07-03 104858](https://github.com/Karenlays/projeto-em-html-css/assets/125169100/432d928a-e1d0-4ff7-8ce6-2e9e11fc55f6)
 
@@ -15,6 +40,17 @@ _OBS: manipulação de template pronto_
 ![Captura de tela 2024-07-03 105138](https://github.com/Karenlays/projeto-em-html-css/assets/125169100/d2db0f54-529d-481b-abd2-81316a970b99)
 
 ![Captura de tela 2024-07-03 105307](https://github.com/Karenlays/projeto-em-html-css/assets/125169100/66f446e0-a2a1-433c-b395-84b56119436e)
+
+---
+## 📄 Créditos
+* **Template Base Original:** BootstrapMade.com / Template acadêmico de 2022
+
+---
+## ✍️ Autora
+* **Refatoração, Estilização e Manutenção:**Karen Laís**  
+- 🎓 Graduada em ADS | Cursando Engenharia de Software  
+- 💻 [Meu Perfil no GitHub](https://github.com/Karenlays)
+
 
 
 
