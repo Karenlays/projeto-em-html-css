@@ -1,8 +1,8 @@
 # Itadakimasu Restaurant
 
-# 🍣 Landing Page — Restaurante de Gastronomia Japonesa
+# 🍣 Website Institucional & Cardápio Digital — Culinária Japonesa
 
-Projeto de interface web desenvolvido como avaliação acadêmica para o curso superior de Análise e Desenvolvimento de Sistemas (ADS). O objetivo do projeto foi a criação de uma landing page para um restaurante temático, utilizando uma estrutura base estilizada e customizada para o segmento.
+Projeto de interface web desenvolvido como avaliação acadêmica para a graduação em Análise e Desenvolvimento de Sistemas (ADS). O objetivo do projeto foi criar uma landing page institucional para um restaurante temático, focando em apresentação visual de cardápio e experiência do usuário.
 
 ---
 
@@ -47,7 +47,7 @@ Acesse a versão ativa do projeto via GitHub Pages:
 
 ---
 ## ✍️ Autora
-* **Refatoração, Estilização e Manutenção:**Karen Laís**  
+* **Refatoração, Estilização e Manutenção: **Karen Laís**  
 - 🎓 Graduada em ADS | Cursando Engenharia de Software  
 - 💻 [Meu Perfil no GitHub](https://github.com/Karenlays)
 
