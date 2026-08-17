@@ -1103,6 +1103,15 @@ section {
   }
 }
 
+.testimonials .testimonial-item img.testimonial-img {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 4px solid rgba(255, 255, 255, 0.2) !important;
+  box-sizing: border-box !important;
+}
+
 .testimonials .testimonial-item .testimonial-img {
   width: 90px !important;
   height: 90px !important;
