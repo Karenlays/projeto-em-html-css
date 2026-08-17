@@ -1106,6 +1106,8 @@ section {
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   height: 90px;
+  max-width: 90px; /* Impede que o Bootstrap estique a imagem */
+  max-height: 90px;
   border-radius: 50%;
   margin: -40px 0 0 40px;
   position: relative;
@@ -1114,6 +1116,28 @@ section {
   object-fit: cover;
   display: block;
 }
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .testimonials .testimonial-item .testimonial-img {
+    width: 70px;
+    height: 70px;
+    max-width: 70px;
+    max-height: 70px;
+    margin: -30px 0 0 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials .testimonial-item .testimonial-img {
+    width: 60px;
+    height: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    margin: -25px 0 0 20px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .testimonials .testimonial-item .testimonial-img {
