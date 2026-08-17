@@ -1795,3 +1795,17 @@ button[type="submit"] {
   width: auto;
 }
 }
+
+/* Força a remoção de qualquer 'width: 100%' vindo do Bootstrap ou Swiper */
+.testimonials .testimonial-item img.testimonial-img {
+  width: 60px !important;
+  height: 60px !important;
+  max-width: 60px !important;
+  max-height: 60px !important;
+  min-width: 60px !important;
+  min-height: 60px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
