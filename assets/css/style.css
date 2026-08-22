@@ -1823,4 +1823,42 @@ button[type="submit"] {
     z-index: 10 !important;
   }
 }
+/*--------------------------------------------------------------
+# Contact Form (Ajuste Mobile)
+--------------------------------------------------------------*/
+/* 1. Estilização dos Inputs e Textarea */
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
+.contact .php-email-form textarea {
+  background-color: #0c0b09 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 4px !important;
+  padding: 12px 15px !important;
+}
+
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* 2. Estilização do Botão Envie */
+.contact .php-email-form button[type="submit"] {
+  background: transparent !important;
+  border: 2px solid #cda45e !important; /* Ou red !important para combinar com os detalhes */
+  color: #ffffff !important;
+  padding: 10px 35px !important;
+  border-radius: 50px !important;
+  cursor: pointer !important;
+  transition: 0.4s !important;
+  display: block !important;
+  margin: 20px auto 0 auto !important; /* Centraliza no mobile */
+}
+
+/* 3. Oculta os alertas de status até o envio */
+.contact .php-email-form .loading,
+.contact .php-email-form .error-message,
+.contact .php-email-form .sent-message {
+  display: none !important;
+}
 
