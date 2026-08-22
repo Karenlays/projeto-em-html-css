@@ -1802,3 +1802,25 @@ button[type="submit"] {
   display: block !important;
 }
 
+/* FORÇAGEM DE ESTILO MOBILE - TESTIMONIALS */
+@media (max-width: 576px) {
+  /* 1. Restaura o card escuro do texto */
+  #testimonials .testimonial-item p {
+    background-color: #26231d !important;
+    background: #26231d !important;
+    border-radius: 6px !important;
+    padding: 20px 15px 45px 15px !important;
+    margin: 0 10px 0 10px !important;
+    color: #ffffff !important;
+  }
+
+  /* 2. Aplica a borda branca visível e a sobreposição da imagem */
+  #testimonials .testimonial-item img.testimonial-img {
+    border: 5px solid rgba(255, 255, 255, 0.3) !important; /* Borda branca bem visível */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5) !important; /* Sombra leve para destacar */
+    margin: -30px 0 0 25px !important; /* Encaixa a foto no topo do card */
+    position: relative !important;
+    z-index: 10 !important;
+  }
+}
+
