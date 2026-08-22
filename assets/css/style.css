@@ -1906,5 +1906,26 @@ button[type="submit"] {
 .php-email-form .sent-message {
   display: none !important;
 }
+/*--------------------------------------------------------------
+# Footer (Ajuste de Listas e Alinhamento Mobile)
+--------------------------------------------------------------*/
+/* Remove os marcadores pretos da lista de links */
+#footer .footer-links ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+#footer .footer-links ul li {
+  padding: 8px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Alinha os ícones de redes sociais no mobile */
+#footer .social-links a {
+  display: inline-block !important;
+  margin-right: 10px !important;
+}
 
 
