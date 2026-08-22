@@ -1927,5 +1927,39 @@ button[type="submit"] {
   display: inline-block !important;
   margin-right: 10px !important;
 }
+/*--------------------------------------------------------------
+# Form Buttons & Inputs (Estilo Vermelho com Hover)
+--------------------------------------------------------------*/
+/* 1. Botão nos formulários (Estado Normal) */
+.book-a-table .php-email-form button[type="submit"],
+.contact .php-email-form button[type="submit"],
+.php-email-form button[type="submit"] {
+  background: transparent !important;
+  border: 2px solid #ff0000 !important; /* Borda vermelha (ou troque por #d90429 / #c1121f) */
+  color: #ff0000 !important;            /* Texto vermelho */
+  padding: 10px 35px !important;
+  border-radius: 50px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out !important;
+  display: block !important;
+  margin: 20px auto 0 auto !important;
+  -webkit-appearance: none !important;
+}
+
+/* 2. Botão nos formulários (Estado Hover / Ao passar o mouse) */
+.book-a-table .php-email-form button[type="submit"]:hover,
+.contact .php-email-form button[type="submit"]:hover,
+.php-email-form button[type="submit"]:hover {
+  background: #ff0000 !important; /* Preenchimento vermelho */
+  color: #ffffff !important;      /* Texto fica branco ao passar o mouse */
+  border-color: #ff0000 !important;
+}
+
+/* 3. Bordas levemente avermelhadas nos inputs (Opcional) */
+.php-email-form input:focus,
+.php-email-form textarea:focus {
+  border-color: #ff0000 !important; /* Destaque vermelho ao clicar no campo */
+  outline: none !important;
+}
 
 
