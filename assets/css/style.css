@@ -1068,7 +1068,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Testimonials
+# Testimonials (Versão Corrigida e Organizada)
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
@@ -1103,34 +1103,76 @@ section {
   }
 }
 
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  margin: -40px 0 0 40px;
+/* --- Card de Texto --- */
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  background: #26231d;
   position: relative;
-  z-index: 2;
-  border: 6px solid rgba(255, 255, 255, 0.2);
-  object-fit: cover;
-  display: block;
+  border-radius: 6px;
+  z-index: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
-  .testimonials .testimonial-item .testimonial-img {
-    width: 70px;
-    height: 70px;
-    margin: -30px 0 0 30px;
+  .testimonials .testimonial-item p {
+    margin: 0 10px 0 10px;
+    padding: 15px 15px 50px 15px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 576px) {
-  .testimonials .testimonial-item .testimonial-img {
-    width: 60px;
-    height: 60px;
-    margin: -25px 0 0 20px;
+  .testimonials .testimonial-item p {
+    margin: 0 8px 0 8px;
+    padding: 12px 12px 45px 12px;
+    font-size: 12px;
   }
 }
 
+/* --- Imagem de Perfil --- */
+.testimonials .testimonial-item img.testimonial-img,
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px !important;
+  height: 90px !important;
+  max-width: 90px !important;
+  max-height: 90px !important;
+  border-radius: 50% !important;
+  margin: -40px 0 0 40px !important;
+  position: relative !important;
+  z-index: 2 !important;
+  border: 6px solid rgba(255, 255, 255, 0.2) !important;
+  object-fit: cover !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+  .testimonials .testimonial-item img.testimonial-img,
+  .testimonials .testimonial-item .testimonial-img {
+    width: 70px !important;
+    height: 70px !important;
+    max-width: 70px !important;
+    max-height: 70px !important;
+    margin: -35px 0 0 30px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials .testimonial-item img.testimonial-img,
+  .testimonials .testimonial-item .testimonial-img {
+    width: 60px !important;
+    height: 60px !important;
+    max-width: 60px !important;
+    max-height: 60px !important;
+    margin: -30px 0 0 20px !important;
+    border-width: 4px !important;
+  }
+}
+
+/* --- Títulos (Nome e Cargo) --- */
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
@@ -1172,7 +1214,9 @@ section {
   }
 }
 
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+/* --- Ícones e Paginação --- */
+.testimonials .testimonial-item .quote-icon-left, 
+.testimonials .testimonial-item .quote-icon-right {
   color: #d3af71;
   font-size: 26px;
 }
@@ -1190,34 +1234,6 @@ section {
   top: 10px;
 }
 
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 0 15px;
-  padding: 20px 20px 60px 20px;
-  background: #26231d;
-  position: relative;
-  border-radius: 6px;
-  z-index: 1;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-@media (max-width: 768px) {
-  .testimonials .testimonial-item p {
-    margin: 0 10px 0 10px;
-    padding: 15px 15px 50px 15px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 576px) {
-  .testimonials .testimonial-item p {
-    margin: 0 8px 0 8px;
-    padding: 12px 12px 40px 12px;
-    font-size: 12px;
-  }
-}
-
 .testimonials .swiper-pagination {
   margin-top: 30px;
   position: relative;
@@ -1233,6 +1249,7 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: red;
 }
+
 
 .gallery .gallery-item {
   overflow: hidden;
@@ -1771,3 +1788,178 @@ button[type="submit"] {
   width: auto;
 }
 }
+
+/* Força a remoção de qualquer 'width: 100%' vindo do Bootstrap ou Swiper */
+.testimonials .testimonial-item img.testimonial-img {
+  width: 60px !important;
+  height: 60px !important;
+  max-width: 60px !important;
+  max-height: 60px !important;
+  min-width: 60px !important;
+  min-height: 60px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* FORÇAGEM DE ESTILO MOBILE - TESTIMONIALS */
+@media (max-width: 576px) {
+  /* 1. Restaura o card escuro do texto */
+  #testimonials .testimonial-item p {
+    background-color: #26231d !important;
+    background: #26231d !important;
+    border-radius: 6px !important;
+    padding: 20px 15px 45px 15px !important;
+    margin: 0 10px 0 10px !important;
+    color: #ffffff !important;
+  }
+
+  /* 2. Aplica a borda branca visível e a sobreposição da imagem */
+  #testimonials .testimonial-item img.testimonial-img {
+    border: 5px solid rgba(255, 255, 255, 0.3) !important; /* Borda branca bem visível */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5) !important; /* Sombra leve para destacar */
+    margin: -30px 0 0 25px !important; /* Encaixa a foto no topo do card */
+    position: relative !important;
+    z-index: 10 !important;
+  }
+}
+/*--------------------------------------------------------------
+# Contact Form (Ajuste Mobile)
+--------------------------------------------------------------*/
+/* 1. Estilização dos Inputs e Textarea */
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
+.contact .php-email-form textarea {
+  background-color: #0c0b09 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 4px !important;
+  padding: 12px 15px !important;
+}
+
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* 2. Estilização do Botão Envie */
+.contact .php-email-form button[type="submit"] {
+  background: transparent !important;
+  border: 2px solid #cda45e !important; /* Ou red !important para combinar com os detalhes */
+  color: #ffffff !important;
+  padding: 10px 35px !important;
+  border-radius: 50px !important;
+  cursor: pointer !important;
+  transition: 0.4s !important;
+  display: block !important;
+  margin: 20px auto 0 auto !important; /* Centraliza no mobile */
+}
+
+/* 3. Oculta os alertas de status até o envio */
+.contact .php-email-form .loading,
+.contact .php-email-form .error-message,
+.contact .php-email-form .sent-message {
+  display: none !important;
+}
+/*--------------------------------------------------------------
+# Book A Table & Forms (Ajuste Geral de Formulários Mobile)
+--------------------------------------------------------------*/
+/* 1. Fundo escuro e bordas translúcidas para todos os inputs e selects */
+.book-a-table .php-email-form input,
+.book-a-table .php-email-form select,
+.book-a-table .php-email-form textarea,
+.php-email-form input,
+.php-email-form select,
+.php-email-form textarea {
+  background-color: #0c0b09 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 4px !important;
+  padding: 12px 15px !important;
+  box-shadow: none !important;
+}
+
+/* 2. Cor dos placeholders (textos de instrução dentro dos campos) */
+.php-email-form input::placeholder,
+.php-email-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* 3. Estilização do botão Reservar / Enviar */
+.book-a-table .php-email-form button[type="submit"],
+.php-email-form button[type="submit"] {
+  background: transparent !important;
+  border: 2px solid #cda45e !important; /* Dourado/vermelho do tema */
+  color: #ffffff !important;
+  padding: 10px 35px !important;
+  border-radius: 50px !important;
+  cursor: pointer !important;
+  transition: 0.4s !important;
+  display: block !important;
+  margin: 20px auto 0 auto !important;
+  -webkit-appearance: none !important; /* Remove estilo azul padrão do iOS/Safari */
+}
+
+/* 4. Esconde as mensagens dinâmicas de status */
+.php-email-form .loading,
+.php-email-form .error-message,
+.php-email-form .sent-message {
+  display: none !important;
+}
+/*--------------------------------------------------------------
+# Footer (Ajuste de Listas e Alinhamento Mobile)
+--------------------------------------------------------------*/
+/* Remove os marcadores pretos da lista de links */
+#footer .footer-links ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+#footer .footer-links ul li {
+  padding: 8px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Alinha os ícones de redes sociais no mobile */
+#footer .social-links a {
+  display: inline-block !important;
+  margin-right: 10px !important;
+}
+/*--------------------------------------------------------------
+# Form Buttons & Inputs (Estilo Vermelho com Hover)
+--------------------------------------------------------------*/
+/* 1. Botão nos formulários (Estado Normal) */
+.book-a-table .php-email-form button[type="submit"],
+.contact .php-email-form button[type="submit"],
+.php-email-form button[type="submit"] {
+  background: transparent !important;
+  border: 2px solid #ff0000 !important; /* Borda vermelha (ou troque por #d90429 / #c1121f) */
+  color: #ff0000 !important;            /* Texto vermelho */
+  padding: 10px 35px !important;
+  border-radius: 50px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out !important;
+  display: block !important;
+  margin: 20px auto 0 auto !important;
+  -webkit-appearance: none !important;
+}
+
+/* 2. Botão nos formulários (Estado Hover / Ao passar o mouse) */
+.book-a-table .php-email-form button[type="submit"]:hover,
+.contact .php-email-form button[type="submit"]:hover,
+.php-email-form button[type="submit"]:hover {
+  background: #ff0000 !important; /* Preenchimento vermelho */
+  color: #ffffff !important;      /* Texto fica branco ao passar o mouse */
+  border-color: #ff0000 !important;
+}
+
+/* 3. Bordas levemente avermelhadas nos inputs (Opcional) */
+.php-email-form input:focus,
+.php-email-form textarea:focus {
+  border-color: #ff0000 !important; /* Destaque vermelho ao clicar no campo */
+  outline: none !important;
+}
+
+
