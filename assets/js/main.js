@@ -10,20 +10,18 @@
   /**
    * Easy selector helper function
    */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
-    }
+  const select = (selector, all = false) => {
+    const trimmedSelector = selector.trim()
+    return all
+      ? [...document.querySelectorAll(trimmedSelector)]
+      : document.querySelector(trimmedSelector)
   }
 
   /**
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
+    const selectEl = select(el, all)
     if (selectEl) {
       if (all) {
         selectEl.forEach(e => e.addEventListener(type, listener))
@@ -36,19 +34,19 @@
   /**
    * Easy on scroll event listener 
    */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
+  const onscroll = (element, listener) => {
+    element.addEventListener('scroll', listener)
   }
 
   /**
    * Navbar links active state on scroll
    */
-  let navbarlinks = select('#navbar .scrollto', true)
+  const navbarlinks = select('#navbar .scrollto', true)
   const navbarlinksActive = () => {
-    let position = window.scrollY + 200
+    const position = window.scrollY + 200
     navbarlinks.forEach(navbarlink => {
       if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
+      const section = select(navbarlink.hash)
       if (!section) return
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
         navbarlink.classList.add('active')
@@ -64,10 +62,12 @@
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
+    const header = select('#header')
+    const offset = header ? header.offsetHeight : 0
+    const target = select(el)
+    if (!target) return
 
-    let elementPos = select(el).offsetTop
+    const elementPos = target.offsetTop
     window.scrollTo({
       top: elementPos - offset,
       behavior: 'smooth'
@@ -77,8 +77,8 @@
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
-  let selectHeader = select('#header')
-  let selectTopbar = select('#topbar')
+  const selectHeader = select('#header')
+  const selectTopbar = select('#topbar')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {
@@ -100,7 +100,7 @@
   /**
    * Back to top button
    */
-  let backtotop = select('.back-to-top')
+  const backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
@@ -133,25 +133,27 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+  * Scroll with offset on links with the .scrollto class
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
 
-      let navbar = select('#navbar')
+      const navbar = select('#navbar')
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        const navbarToggle = select('.mobile-nav-toggle')
+        if (navbarToggle) {
+          navbarToggle.classList.toggle('bi-list')
+          navbarToggle.classList.toggle('bi-x')
+        }
       }
       scrollto(this.hash)
     }
   }, true)
 
   /**
-   * Scroll with ofset on page load with hash links in the url
+  * Scroll with offset on page load when the URL contains a hash
    */
   window.addEventListener('load', () => {
     if (window.location.hash) {
@@ -164,7 +166,7 @@
   /**
    * Preloader
    */
-  let preloader = select('#preloader');
+  const preloader = select('#preloader')
   if (preloader) {
     window.addEventListener('load', () => {
       preloader.remove()
@@ -175,14 +177,14 @@
    * Menu isotope and filter
    */
   window.addEventListener('load', () => {
-    let menuContainer = select('.menu-container');
+    const menuContainer = select('.menu-container')
     if (menuContainer) {
-      let menuIsotope = new Isotope(menuContainer, {
+      const menuIsotope = new Isotope(menuContainer, {
         itemSelector: '.menu-item',
         layoutMode: 'fitRows'
       });
 
-      let menuFilters = select('#menu-flters li', true);
+      const menuFilters = select('#menu-flters li', true)
 
       on('click', '#menu-flters li', function(e) {
         e.preventDefault();

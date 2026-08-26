@@ -190,6 +190,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+#header .logo a span {
+  display: block;
+  color: #ff0033;
+}
+
 #header .logo img {
   max-height: 200px;
   margin-left: 10px;
@@ -704,7 +709,6 @@ section {
 
 .section-title p {
   margin: 0;
-  margin: 0;
   font-size: 36px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
@@ -1217,7 +1221,7 @@ section {
 /* --- Ícones e Paginação --- */
 .testimonials .testimonial-item .quote-icon-left, 
 .testimonials .testimonial-item .quote-icon-right {
-  color: #d3af71;
+  color: #ff0033;
   font-size: 26px;
 }
 
@@ -1897,6 +1901,7 @@ button[type="submit"] {
   transition: 0.4s !important;
   display: block !important;
   margin: 20px auto 0 auto !important;
+  appearance: none !important;
   -webkit-appearance: none !important; /* Remove estilo azul padrão do iOS/Safari */
 }
 
@@ -1948,6 +1953,7 @@ button[type="submit"] {
   transition: all 0.3s ease !important;
   display: block !important;
   margin: 20px auto 0 auto !important;
+  appearance: none !important;
   -webkit-appearance: none !important;
 }
 
